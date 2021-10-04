@@ -10,7 +10,10 @@ bool CourseReader::read_courses() {
         std:: string name, number;
         name = line.substr(0, line.find(" "));
         number = line.substr(line.find(" ")+1, line.size()-1);
-        if (name == "" || number == "") break;
+        if (name == "" || number == "") {
+            this->file.close();
+            return false;
+        }
         this->courses.push_back({name, number});
     }
     this->file.close();
