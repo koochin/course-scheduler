@@ -47,7 +47,7 @@ Each course should be on a single line escaped with `\n` and follow Simon Fraser
 
 ## Output
 
-The computed schedules will be placed in a file with name **FILENAME schedules.txt** in the same location as the input **FILENAME**.
+The computed schedules will be placed in a file with name "**FILENAME schedules**" in the same location as the input **FILENAME**.
 
 ## About
 
